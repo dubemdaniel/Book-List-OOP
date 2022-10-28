@@ -28,28 +28,63 @@ form div{
 input{
     display: block;
     width: 100%;
+    padding: .2rem .6rem;
 }
 #submit{
     width: 4rem;
     height: 2rem;
     color: white;
     background: linear-gradient(to left, orange, rgb(237, 46, 25));
+    padding: initial;
 }
 table{
       width: 100%;
-
+    
 }
-thead, tbody{
+table thead,table tbody{
     /* display: grid;
     grid-template-columns: 30% 30% 30% 10%; */
+    padding: 6rem 1rem 1rem 1rem;
 
 }
 th, td{
-    border: 1px solid black;
     padding: .2rem 10px;
     text-align: left;
-
+    border-bottom: 1px solid #ede5e5;
+    position: relative;
 }
+
+i{
+    width: 2rem;
+    color: black;
+}
+.delete{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+img{
+    width: 2rem;
+    display: flex;
+    /* align-content: flex-end; */
+}
+
+/* ================================
+dynamic css styling starts here*/
+.notify {
+    color: white;
+    padding:.3rem 1rem;
+    margin: 1rem 0px .4rem 0px;
+}
+.success{
+    background-color: green;
+}
+
+.failure{
+    background-color: red;
+}
+/* ====================================
+dynamic css styling ends here */
 
 @media (min-width:475px) {
     .wrapper{
