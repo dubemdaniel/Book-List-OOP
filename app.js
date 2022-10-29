@@ -93,7 +93,7 @@ document.getElementById('table-body').addEventListener('click', (e) => {
 
     ui.removeBook(e.target)
 
-    ui.validate('Book Removed successfully', 'success')
+    // ui.validate('Book Removed successfully', 'success')
 
     e.preventDefault
 })
